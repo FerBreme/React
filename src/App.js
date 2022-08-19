@@ -1,25 +1,14 @@
-import logo from './logo.svg';
+import { dividerClasses } from '@mui/material';
+import React from 'react';
 import './App.css';
+import NavBar from './components/navBar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Fernando Breme
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render(){
+    return(
+      <NavBar />
+    )
+  }
 }
 
 export default App;

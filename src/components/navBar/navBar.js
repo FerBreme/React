@@ -1,4 +1,6 @@
-const NavBar = () =>{
+import CartWidget from "./cartWidget";
+
+function NavBar () {
     return(
         <nav>
         <ul className="nav">
@@ -6,8 +8,9 @@ const NavBar = () =>{
         <li>Productos</li>
         <li>Contacto</li>
         <li>Sobre Nosotros</li>
+        <CartWidget />
         </ul>
-      </nav> 
+      </nav>
     )
 }
 export default NavBar;

@@ -8,10 +8,22 @@ li{
   list-style-type: none;
   padding: 10px;
   border: 1px solid black;
+  border-radius: 50%;
   background-color: black;
   color: white;
+  width: 8rem;
+  text-align: center;
 }
 li:hover{
   background-color: green;
   cursor: pointer;
+}
+
+.img_cart{
+  height: 3rem;
+}
+
+.ItemContainer{
+  text-align: center;
+  border: 1px solid black;
 }

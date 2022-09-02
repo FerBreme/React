@@ -1,0 +1,110 @@
+[
+    {
+        "id": 0,
+        "nombre": "Anillos de compromiso",
+        "precio": 1200,
+        "stock": 3,
+        "Descripcion": "Un par de Anillos de plata, con grabado a peticion del cliente",
+        "categoria": "Anillos",
+        "img": "/imagenes/anillos1.jpg"
+    },
+    {
+        "id": 1,
+        "nombre": "Anillo Bañado en Oro",
+        "precio": 1500,
+        "stock": 5,
+        "Descripcion": "Disponible en talle 12 al 18",
+        "categoria": "Anillos",
+        "img": "/imagenes/anillos2.jpg" 
+    },
+    {
+        "id": 2,
+        "nombre": "Anillos de Casamiento",
+        "precio": 1900,
+        "stock": 3,
+        "Descripcion": "Un Par de Anillos bañados en oro, con grabado a solicitud del cliente",
+        "categoria": "Anillos",
+        "img": "/imagenes/anillos3.jpg" 
+    },
+    {
+        "id": 3,
+        "nombre": "Cadena de oro Tipo I",
+        "precio": 1700,
+        "stock": 5,
+        "Descripcion": "Cadena bañada en oro, a medida del cliente",
+        "categoria": "Cadenas",
+        "img":"/imagenes/cadenas1.jpg" 
+    },
+    {
+        "id": 4,
+        "nombre": "Cadena de oro Tipo II",
+        "precio": 2300,
+        "stock": 4,
+        "Descripcion": "Cadena Revestida en oro, modelo Hip-Hop, con dije opcional(A eleccion)",
+        "categoria": "Cadenas",
+        "img":"/imagenes/cadenas2.jpg" 
+    },
+    {
+        "id": 5,
+        "nombre": "Cadena Special Edition",
+        "precio": 2800,
+        "stock": 3,
+        "Descripcion": "Ideal para Cualquier Outfit, Pedido por anticipado, con 20% de seña",
+        "categoria": "Cadenas",
+        "img":"/imagenes/cadenas3.jpg" 
+    },
+    {
+        "id": 6,
+        "nombre": "Lentes de sol - Marco de plastico",
+        "precio": 600,
+        "stock": 7,
+        "Descripcion": "Uno de los mejores lentes de sol, con vidrios super resistentes",
+        "categoria": "Lentes",
+        "img":"/imagenes/lentes1.jpg" 
+    },
+    {
+        "id": 7,
+        "nombre": "Lentes de sol - Marco de aluminio",
+        "precio": 1000,
+        "stock": 8,
+        "Descripcion": "Extra comodos y resistentes, de larga duracion",
+        "categoria": "Lentes",
+        "img":"/imagenes/lentes2.jpg" 
+    },
+    {
+        "id": 8,
+        "nombre": "Lentes - Ultra Black",
+        "precio": 1150,
+        "stock": 5,
+        "Descripcion": "Ideales para dias soleados, refleja el 100% de los rayos solares",
+        "categoria": "Lentes",
+        "img": "/imagenes/lentes3.jpg" 
+    },
+    {
+        "id": 9,
+        "nombre": "Reloj Estilo Retro",
+        "precio": 1300,
+        "stock": 4,
+        "Descripcion": "Diseño muy elegante, super comodos a la hora de utilizarlos",
+        "categoria": "Relojeria",
+        "img":"/imagenes/relojes1.jpg" 
+    },
+    {
+        "id": 10,
+        "nombre": "Reloj Clasico - color a eleccion",
+        "precio": 1100,
+        "stock": 5,
+        "Descripcion": "El regalo ideal para complacer a esa persona especial",
+        "categoria": "Relojeria",
+        "img":"/imagenes/relojes2.jpg" 
+    },
+    {
+        "id": 11,
+        "nombre": "Reloj con encastres",
+        "precio": 1200,
+        "stock": 5,
+        "Descripcion": "Hechos con el mejor material. no tironea los vellos ni aprieta",
+        "categoria": "Relojeria",
+        "img":"/imagenes/relojes3.jpg" 
+    }
+]

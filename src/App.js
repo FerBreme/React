@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import NavBar from './components/navBar/navBar';
 import ItemListContainer from './components/ItemListContainer/itemListContainer';
+import CardItem from './components/ItemListContainer/item';
 
 
 

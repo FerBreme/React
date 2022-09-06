@@ -27,20 +27,16 @@ li:hover{
   text-align: center;
   border: 1px solid black;
 }
-
-.counterContainer{
-  text-align: center;
-  border: 3px solid black;
-  width: 25%;
-  margin: 0 37.5%;
-}
 .btnContainer{
   display: flex;
   justify-content: center;
 }
 
-.counter{
-  margin: 0 50px;
-  font-size: 50px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.prodContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card{
+  margin: 20px;
 }

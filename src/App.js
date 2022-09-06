@@ -1,21 +1,27 @@
-import { dividerClasses } from '@mui/material';
+
 import React from 'react';
 import './App.css';
 import NavBar from './components/navBar/navBar';
 import ItemListContainer from './components/ItemListContainer/itemListContainer';
-import CardItem from './components/ItemListContainer/item';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import GetItem from './components/itemDetailContainer/itemDetailContainer';
 
-
-
-class App extends React.Component {
-  render(){
+const App = () => {
     return(
-      <>
-      <NavBar />
-      <ItemListContainer nombre ='Fernando Breme'/>
-      </>
-    )
-  }
-}
+    <BrowserRouter>
+    <div>
+    <NavBar />
+    <Routes>
+    <Route path='/' element={<ItemListContainer nombre ='Fernando Breme'/>}/>
+    <Route path='/details/:id'element={<GetItem />} />
+    </Routes>
+    </div>
+    </BrowserRouter>
+);
+};
+    
+      
+    
+
 
 export default App;

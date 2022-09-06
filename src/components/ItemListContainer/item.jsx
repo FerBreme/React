@@ -1,9 +1,9 @@
-import { useState } from "react"
+
 import {Card, CardContent, CardMedia, Typography, CardActionArea} from '@mui/material';
 
 const CardItem = ({data}) =>{
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345 }} className="card">
           <CardActionArea>
             <CardMedia
               component="img"
@@ -14,14 +14,11 @@ const CardItem = ({data}) =>{
               <Typography gutterBottom variant="h5" component="div">
                 {data.nombre}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {data.descripcion}
+              <Typography>
+                Stock:{data.stock}
               </Typography>
               <Typography>
-                {data.stock}
-              </Typography>
-              <Typography>
-                {data.precio}
+                Precio: ${data.precio}
               </Typography>
             </CardContent>
           </CardActionArea>

@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import CardItem from "./item";
-import Data from "../../catalogo.json"
+import { Link } from "react-router-dom";
+// import Data from "./catalogo.json"
 
 const Catalogo = () =>{
     const [Items, setItems] = useState([]);
     
     useEffect(() =>{
          setTimeout(()=>{
-            fetch(Data)
+            fetch('./catalogo.json')
             .then((res)=> res.json())
             .then((json)=> setItems(json))
          }, 2000)
@@ -15,10 +16,15 @@ const Catalogo = () =>{
     }, []);
 
     return(
-        <div>
+        <div className="prodContainer">
             {
                 Items.map((item)=>{
-                    return <CardItem key={item.id} data={item}/>
+                    return(
+                        <Link to={`/details/${item.id}`} >
+                            <CardItem key={item.id} data={item}/>
+                        </Link>
+                    ) 
+                    
                 })
             }
         </div>

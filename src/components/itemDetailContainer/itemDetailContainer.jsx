@@ -2,26 +2,30 @@ import { useEffect, useState } from "react";
 import CardItemDetail from "./itemDetail";
 import { useParams } from "react-router-dom";
 
-const GetItem = () =>{
+const GetItem = () => {
     const [Item, setItem] = useState([]);
     let { id }= useParams();
     
     useEffect(() =>{
          setTimeout(()=>{
-            fetch(`./catalogo.json/${id}`)
+            fetch('../catalogo.json')
             .then((res)=> res.json())
             .then((json)=> setItem(json))
-         }, 2000)
+         }, 1000)
         
     }, []);
-    console.log(Item);
-    // return(Item.map((itemDetail)=>{
-    //     return (
-    //         <div key={id}>
-    //             <CardItemDetail  data={itemDetail}/>
-    //         </div>
-    //     ) 
-    // }))
+        const item = Item.find(itemDetail => id == itemDetail.id );
+        console.log(item);
+    
+      
+    if (item != undefined) {
+        return(
+            <div className="card-detail">
+                <CardItemDetail data={item}/>
+            </div>
+            
+          )
+    }
     
     }
 

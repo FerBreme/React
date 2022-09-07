@@ -2,11 +2,11 @@ import {Card, CardContent, CardMedia, Typography, CardActionArea} from '@mui/mat
 
 const CardItemDetail = ({data}) =>{
     return (
-        <Card sx={{ maxWidth: 345 }} className="card">
+        <Card sx={{ maxWidth: 700 }} className="card">
           <CardActionArea>
             <CardMedia
               component="img"
-              height="140"
+              height="300"
               image={data.img}
             />
             <CardContent>
@@ -14,7 +14,7 @@ const CardItemDetail = ({data}) =>{
                 {data.nombre}
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                {data.Descripcion}
+                 Descripcion: {data.Descripcion}
               </Typography>
               <Typography>
                 Stock:{data.stock}

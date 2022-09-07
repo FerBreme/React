@@ -5,10 +5,10 @@ function NavBar () {
     return(
         <nav>
         <ul className="nav">
-        <Link to="/">Inicio</Link>
-        <li>Productos</li>
-        <li>Contacto</li>
-        <li>Sobre Nosotros</li>
+        <Link className="li" to="/">Inicio</Link>
+        <Link className="li" to="/">Productos</Link>
+        <Link className="li" to="/">Contacto</Link>
+        <Link className="li" to="/">Sobre Nosotros</Link>
         <CartWidget />
         </ul>
       </nav>

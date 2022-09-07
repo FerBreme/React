@@ -4,7 +4,7 @@
   justify-content: space-around;
   background-color: greenyellow;
 }
-li{
+.li{
   list-style-type: none;
   padding: 10px;
   border: 1px solid black;
@@ -13,8 +13,9 @@ li{
   color: white;
   width: 8rem;
   text-align: center;
+  text-decoration: none;
 }
-li:hover{
+.li:hover{
   background-color: green;
   cursor: pointer;
 }
@@ -39,4 +40,13 @@ li:hover{
 
 .card{
   margin: 20px;
+}
+
+.card-detail{
+  width: 50%;
+  margin: 20px 35%;
+  display: flex;
+}
+.link{
+  text-decoration: none;
 }

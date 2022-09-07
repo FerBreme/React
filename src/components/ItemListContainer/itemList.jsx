@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import CardItem from "./item";
 import { Link } from "react-router-dom";
-// import Data from "./catalogo.json"
 
-const Catalogo = () =>{
+const Catalogo = () => {
     const [Items, setItems] = useState([]);
     
     useEffect(() =>{
@@ -20,7 +19,7 @@ const Catalogo = () =>{
             {
                 Items.map((item)=>{
                     return(
-                        <Link to={`/details/${item.id}`} >
+                        <Link className="link" to={`/details/${item.id}`} >
                             <CardItem key={item.id} data={item}/>
                         </Link>
                     ) 

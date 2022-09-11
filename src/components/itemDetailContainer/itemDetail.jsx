@@ -1,6 +1,13 @@
-import {Card, CardContent, CardMedia, Typography, CardActionArea} from '@mui/material';
-
+import {Card, CardContent, CardMedia, Typography, CardActionArea, Button} from '@mui/material';
+import Counter from '../itemCount/itemCount';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 const CardItemDetail = ({data}) =>{
+  const [cart, setCart] = useState([]);
+   const addToCart = () => {
+    setCart(data);
+  }
+
     return (
         <Card sx={{ maxWidth: 700 }} className="card">
           <CardActionArea>
@@ -24,6 +31,8 @@ const CardItemDetail = ({data}) =>{
               </Typography>
             </CardContent>
           </CardActionArea>
+
+          {cart.length == 0 ? <Counter data={addToCart}/> : <Link to="/cart" className='cartLink'> Ir al carrito</Link> }
         </Card>
       );
 }

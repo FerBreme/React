@@ -50,3 +50,18 @@
 .link{
   text-decoration: none;
 }
+
+.cartLink{
+  text-decoration: none;
+  border: 1px solid black;
+  font-weight: bolder;
+  display: block;
+  text-align: center;
+  background-color: blanchedalmond;
+}
+.cartLink:hover{
+  background-color: bisque;
+}
+.cart{
+  text-align: center;
+}

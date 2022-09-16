@@ -1,28 +1,15 @@
 import { useState } from "react";
-const Counter = ({data}) =>{
+const Counter = ({event, stock}) =>{
      const [contador, setContador] = useState(0);
-      const sumarContador = () =>{
-         if (contador < 3) {
-             setContador(contador + 1 );
-         } else{
-             alert('Excediste el limite actual de stock.');
-         }
-     }
-      const restarContador = () => {
-         if (contador > 0) {
-             setContador(contador - 1);
-         } else{
-             alert('La cantidad seleccionada es invalida.');
-         }
-     }
+
      return(
          <div className="counterContainer">
              <div className="btnContainer">
-                 <button onClick={sumarContador}>+</button>
+                 { contador < stock ? <button onClick={() => setContador(contador +1)}>+</button> : null}
                  <p className="counter">{contador}</p>
-                 <button onClick={restarContador}>-</button>
+                 { contador > 0 ? <button onClick={() => setContador(contador -1)}>-</button> : null}
              </div>
-            {contador !=0 && <button className="cartLink" onClick={data}>Añadir al carrito</button>}
+            {contador !=0 && <button className="cartLink" onClick={event}>Añadir al carrito</button>}
          </div>
      )
  }

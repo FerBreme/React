@@ -15,8 +15,6 @@ const GetItem = () => {
         
     }, []);
         const item = Item.find(itemDetail => id == itemDetail.id );
-        console.log(item);
-    
       
     if (item != undefined) {
         return(

@@ -7,11 +7,17 @@ import 'react-toastify/dist/ReactToastify.min.css'
 import { CartContext } from '../cart/cartContext';
 const CardItemDetail = ({data}) =>{
   const [cart, setCart] = useContext(CartContext);
+  const id = cart.find(prod => data.id === prod.id)
+
    const addToCart = () => {
-    setCart(data);
+    if(id != undefined){
+      id.quantity++
+    }
+    else{
+      setCart([...cart, {...data, quantity: 1}]);
+    }
     toast('Agregado Exitosamente!');
   }
-  console.log(cart)
     return (
         <Card sx={{ maxWidth: 700 }} className="card">
           <CardActionArea>
@@ -35,7 +41,7 @@ const CardItemDetail = ({data}) =>{
               </Typography>
             </CardContent>
           </CardActionArea>
-          <Counter  stock= {data.stock} event={addToCart}/>
+           <Counter  stock= {data.stock} event={addToCart}/>
           {cart.length != 0 ? <Link to="/cart" className='cartLink'> Ir al carrito</Link> : null}
 
           <ToastContainer 

@@ -65,3 +65,12 @@
 .cart{
   text-align: center;
 }
+
+.cartItemDetail{
+  display: flex;
+  width: 80%;
+  height: 40px;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin: 0 0 5px 10%;
+}

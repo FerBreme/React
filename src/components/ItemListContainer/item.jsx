@@ -12,13 +12,13 @@ const CardItem = ({data}) =>{
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                {data.nombre}
+                {data.name}
               </Typography>
               <Typography>
                 Stock:{data.stock}
               </Typography>
               <Typography>
-                Precio: ${data.precio}
+                Precio: ${data.price}
               </Typography>
             </CardContent>
           </CardActionArea>

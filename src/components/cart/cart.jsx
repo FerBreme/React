@@ -9,7 +9,7 @@ const Cart = () => {
 
   const totalCart = 
   items.reduce((prev, act) =>
-  prev + act.quantity * act.precio, 0)
+  prev + act.quantity * act.price, 0)
 
   const removeItem = (item) => {
     setItems(items.filter(prod => prod.id != item.id));
@@ -22,12 +22,12 @@ const Cart = () => {
 
       <div>
         {items.map(element => {
-          let totalPriceItem = element.precio * element.quantity
+          let totalPriceItem = element.price * element.quantity
           return(
             <div className='cartItemDetail' key={element.id}>
               <img src={element.img} alt="" />
-              <h3>{element.nombre}</h3>
-              <p>${element.precio}</p>
+              <h3>{element.name}</h3>
+              <p>${element.price}</p>
               <p>Unidades:{element.quantity}</p>
               <p>Subtotal: {totalPriceItem}</p>
               <button onClick={() => removeItem(element) }>X</button>

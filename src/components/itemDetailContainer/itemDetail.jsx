@@ -28,16 +28,16 @@ const CardItemDetail = ({data}) =>{
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                {data.nombre}
+                {data.name}
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                 Descripcion: {data.Descripcion}
+                 Descripcion: {data.description}
               </Typography>
               <Typography>
                 Stock:{data.stock}
               </Typography>
               <Typography>
-                Precio: ${data.precio}
+                Precio: ${data.price}
               </Typography>
             </CardContent>
           </CardActionArea>

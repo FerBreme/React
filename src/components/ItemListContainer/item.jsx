@@ -27,3 +27,6 @@ const CardItem = ({data}) =>{
 }
 
 export default CardItem;
+
+
+

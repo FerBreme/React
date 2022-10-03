@@ -37,6 +37,7 @@ const Cart = () => {
       </div>
       {items.length != 0 && <h3>Total: {totalCart}</h3>}
       {items.length != 0 ? <button onClick={clearCart}>Limpiar Carrito</button> : <Link to="/" className='cartLink'> Ir al Catalogo</Link>}
+      {items.length != 0 && <Link to="/checkout" className='cartLink'> Finalizar Compra</Link>}
     </div>
   )
 }

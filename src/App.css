@@ -74,3 +74,36 @@
   border: 1px solid black;
   margin: 0 0 5px 10%;
 }
+
+.checkoutForm {
+  display: grid;
+  width: 30%;
+  margin: 5% 0 0 35%;
+  row-gap: 10px;
+}
+
+h1{
+  text-align: center;
+  margin-top: 40px;
+}
+
+form div{
+  width: 100%;
+}
+button{
+  cursor: pointer;
+}
+.messageAlert{
+  width: 50%;
+  margin: 20px 0 0 25%;
+}
+b{
+  vertical-align: top;
+  font-size: 20px;
+  color: black;
+  border: 1px solid black;
+  width: 100%;
+  background-color: white;
+  
+  
+}

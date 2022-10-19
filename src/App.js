@@ -8,11 +8,12 @@ import GetItem from './components/itemDetailContainer/itemDetailContainer';
 import Cart from './components/cart/cart';
 import ItemsProvider from './components/cart/cartContext';
 import Checkout from './components/cart/checkout';
+import Category from './components/ItemListContainer/category';
 
 const App = () => {
     return(
+    <ItemsProvider>
     <BrowserRouter>
-    <ItemsProvider> 
     <div>
     <NavBar />
     <Routes>
@@ -20,10 +21,12 @@ const App = () => {
     <Route path='/details/:id'element={<GetItem />} />
     <Route path='/cart'element={<Cart />} />
     <Route path='/checkout'element={<Checkout />} />
+    <Route path='/category/:category'element={<Category />} />
     </Routes>
     </div>
-    </ItemsProvider>
     </BrowserRouter>
+    </ItemsProvider>
+    
 );
 };
     

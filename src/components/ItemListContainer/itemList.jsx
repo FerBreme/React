@@ -3,10 +3,11 @@ import CardItem from "./item";
 import { Link } from "react-router-dom";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import {db} from "../../firebase/firebaseConfig"
+import Spinner from "../Spinner/Spinner";
 
 const Catalogo = () => {
     const [Items, setItems] = useState([]);
-    
+    const [isLoad, setIsLoad] = useState(true);
     const getProds = async () => {
         const docs = [];
         const q = query(collection(db, "products"));
@@ -21,18 +22,20 @@ const Catalogo = () => {
    useEffect(() => {
         getProds();
    }, [])
+   setTimeout( () => setIsLoad(false), 1500)
 
     return(
         <div className="prodContainer">
             {
-                Items.map((item)=>{
+                isLoad ? <Spinner /> :
+                (Items.map((item)=>{
                     return(
                         <Link key={item.id} className="link" to={`/details/${item.id}`} >
                             <CardItem data={item} />
                         </Link>
                     ) 
                     
-                })
+                }))
             }
         </div>
     )

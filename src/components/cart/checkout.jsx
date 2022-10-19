@@ -77,6 +77,7 @@ const Checkout = () => {
               name='email'            
               value={values.email}
               onChange={handleOnChange}
+              type= "email"
               />
           </div>
 

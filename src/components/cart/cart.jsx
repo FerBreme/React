@@ -8,14 +8,15 @@ const Cart = () => {
   const clearCart = () => setItems([]);
 
   const totalCart = 
-  items.reduce((prev, act) =>
-  prev + act.quantity * act.price, 0)
-
+          items.reduce((prev, act) =>
+          prev + act.quantity * act.price, 0)
+  
+  
   const removeItem = (item) => {
     setItems(items.filter(prod => prod.id != item.id));
   }
 
-  
+
   return (
     <div >
       <h1 className='cart'>Carrito de compras</h1>
@@ -23,6 +24,9 @@ const Cart = () => {
       <div>
         {items.map(element => {
           let totalPriceItem = element.price * element.quantity
+
+          
+        
           return(
             <div className='cartItemDetail' key={element.id}>
               <img src={element.img} alt="" />
